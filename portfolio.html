@@ -1,131 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-      <!--==================== UNICONS ====================-->
-      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <!--==================== SWIPER CSS ====================-->
-      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-  
-      <!--==================== CSS ====================-->
-      <link rel="stylesheet" href="assets/css/styles.css">
-      <title>My Portfolio</title>
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-</head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXQ16XRKHJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-ZXQ16XRKHJ');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KR4BPLX');</script>
+    <!-- End Google Tag Manager -->
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Lucas Moriondo's Portfolio">
+	<meta name="description" content="Here you will be able to see all my proyects!">
+	<!--============== Open Graph / Facebook ==============-->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://lmoriond.github.io/index.html"/>
+	<meta property="og:title" content="Lucas Moriondo's Portfolio"/>
+	<meta property="og:description" content="Here you will be able to see all my proyects!"/>
+	<meta property="og:image" content="https://raw.githubusercontent.com/lmoriond/lmoriond.github.io/main/assets/img/Social_preview.jpg"/>
+    
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Lucas Moriondo's Portfolio</title>
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+</head>
 <body>
 <!--==================== HEADER ====================-->
-<nav class="nav container">
-        <a href="index.html" class="nav__logo">My Curriculum</a>
-</div>
-</nav>
-<section class="about section" id="about">
-    <h2 class="section__title"> Projects</h2>
-    <span class="section__subtitle">Every project & details</span>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">My Curriculum</a>
+           
+                <!--Theme change button-->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-  <style>
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 30px;
-      margin: 150px;
-    }
+            </div>
+        </nav>
+    </header>
 
-    .portfolio-item {
-      background-color: rgba(70, 253, 146, 0.116);
-      padding: 20px;
-      text-align: center;
-      border-radius: 30px;      
-      transition: all 0.3s ease-in-out;
-    }
+<!--==================== MAIN ====================-->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KR4BPLX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <main class="main">
+        <!--==================== GRID ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title"> Projects</h2>
+            <span class="section__subtitle">Every project & details</span>
+        
+          <style>
+             .portfolio-grid {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-gap: 30px;
+              margin: 150px;
+            }
+        
+            .portfolio-item {
+              background-color: rgba(70, 253, 146, 0.116);
+              padding: 20px;
+              text-align: center;
+              border-radius: 30px;      
+              transition: all 0.3s ease-in-out;
+            }
+        
+            .portfolio-item img {
+              width: 70%;
+            }
+        
+            .portfolio-item:hover {
+              background-color: rgba(70, 253, 146, 0.329);
+              transform: scale(1.1);
+            }
+        
+          </style>
+        
+        <body>
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <a href="https://github.com/lmoriond/sqlprojects/blob/main/Data_Exploration_For_Visualization.sql">
+              <img src="assets/img/portfolio1.png" alt="Data Exploration">  
+              <h3>Data Exploration</h3> </a>
+              <p>Data exploration with SQL for future visualization from COVID global cases and vaccination over the last 3 years.</p>
+            </div>
+            <div class="portfolio-item">
+              <a href="https://public.tableau.com/app/profile/l3762/viz/COVID_project/Dashboard1">    
+              <img src="assets/img/portfolio2.png" alt="Data Visualization">
+              <h3>Data Visualization</h3> </a>
+              <p>In this Tableau's dashboard you will see a quick visualization and a forecasting model for COVID's future infection percentages for 2023.</p>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://github.com/lmoriond/sqlprojects/blob/main/Processes_Check_byTeams.sql">
+              <img src="assets/img/portfolio3.png" alt="Process Overview">
+              <h3>Process Overview</h3> </a>
+              <p>Validating insights in SQL to spot metrics and performance for each team that inform and influence data driven business strategies and servicing.</p>
+            </div>
+            <div class="portfolio-item">
+                <a href="#">
+              <img src="assets/img/portfolio4.png" alt="Interactive Dashboard">
+              <h3>Interactive Dashboard</h3> </a>
+              <p>You will soon be able to see this proyect!</p>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://github.com/lmoriond/pythonprojects/blob/main/Data_correlation.ipynb">
+              <img src="assets/img/portfolio5.png" alt="Data Correlation Analysis">
+              <h3>Data Correlation Analysis</h3> </a>
+              <p>Data cleaning for future variables analysis using the Pearson coefficient and visualizations to detect relationships.</p>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://github.com/lmoriond/sqlprojects/blob/main/Productivity_Cases_Report.sql">
+              <img src="assets/img/portfolio6.png" alt="KPI and Productivity Report">
+              <h3>KPI and Productivity Report</h3> </a>
+              <p>Performance insights by day and month to see productivity trends for each team's analysts and deliver planning partnering with operations.</p>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://github.com/lmoriond/pythonprojects/blob/main/Apple_health/apple_health_data_processor.ipynb">
+                <img src="assets/img/portfolio7.png" alt="Exporting Wearable's Data">
+                <h3>Exporting Wearable's Data</h3> </a>
+                <p>Export apple watch data to transform and visualize it through Matplob to test my hyphothesis and validate my assumptions: I do not exercise enough.</p>
+            </div>
+            <div class="portfolio-item">
+                <a href="assets/pdf/expenses_tracker.pdf">
+                <img src="assets/img/portfolio8.png" alt="Expenses Tracker App">
+                <h3>Expenses Tracker App</h3> </a>
+                <p>Personal solution for accounting and data analysis for all of my purchases and expeses. Developed with Appsheet, free to download and use.</p>
+            </div>
+            <div class="portfolio-item">
+                <a href="assets/pdf/googleanalytics.pdf">
+                <img src="assets/img/portfolio9.png" alt="Google Analytics Insights">
+                <h3>Google Analytics Insights</h3> </a>
+                <p>Experimentation with Google Tag and Google Analytics to collects data from my portfolio to create reports that provide useful insights.</p>
+            </div>
+          </div>
+        </body>
+        </div>
+        </div>
 
-    .portfolio-item img {
-      width: 70%;
-    }
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Lucas</h1>
+                    <span class="footer__subtitle">Data Analyst & Product Designer</span>
+                </div>
 
-    .portfolio-item:hover {
-      background-color: rgba(70, 253, 146, 0.329);
-      transform: scale(1.1);
-    }
+                <ul class="footer__links">
+                    <li>
+                        <a href="index.html" class="footer__link">Curriculum</a>
+                    </li>
 
-  </style>
+                    <li>
+                        <a href="portfolio.html" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
 
-<body>
-  <div class="portfolio-grid">
-    <div class="portfolio-item">
-      <a href="https://github.com/lmoriond/sqlprojects/blob/main/Data_Exploration_For_Visualization.sql">
-      <img src="assets/img/portfolio1.png" alt="Data Exploration">  
-      <h3>Data Exploration</h3> </a>
-      <p>Data exploration with SQL for future visualization from COVID global cases and vaccination over the last 3 years.</p>
-    </div>
-    <div class="portfolio-item">
-      <a href="https://public.tableau.com/app/profile/l3762/viz/COVID_project/Dashboard1">    
-      <img src="assets/img/portfolio2.png" alt="Data Visualization">
-      <h3>Data Visualization</h3> </a>
-      <p>In this Tableau's dashboard you will see a quick visualization and a forecasting model for COVID's future infection percentages for 2023.</p>
-    </div>
-    <div class="portfolio-item">
-        <a href="https://github.com/lmoriond/sqlprojects/blob/main/Processes_Check_byTeams.sql">
-      <img src="assets/img/portfolio3.png" alt="Process Overview">
-      <h3>Process Overview</h3> </a>
-      <p>Validating insights in SQL to spot metrics and performance for each team that inform and influence data driven business strategies and servicing.</p>
-    </div>
-    <div class="portfolio-item">
-        <a href="#">
-      <img src="assets/img/portfolio4.png" alt="Interactive Dashboard">
-      <h3>Interactive Dashboard</h3> </a>
-      <p>You will soon be able to see this proyect!</p>
-    </div>
-    <div class="portfolio-item">
-        <a href="https://github.com/lmoriond/pythonprojects/blob/main/Data_correlation.ipynb">
-      <img src="assets/img/portfolio5.png" alt="Data Correlation Analysis">
-      <h3>Data Correlation Analysis</h3> </a>
-      <p>Data cleaning for future variables analysis using the Pearson coefficient and visualizations to detect relationships.</p>
-    </div>
-    <div class="portfolio-item">
-        <a href="https://github.com/lmoriond/sqlprojects/blob/main/Productivity_Cases_Report.sql">
-      <img src="assets/img/portfolio6.png" alt="KPI and Productivity Report">
-      <h3>KPI and Productivity Report</h3> </a>
-      <p>Performance insights by day and month to see productivity trends for each team's analysts and deliver planning partnering with operations.</p>
-    </div>
-    <div class="portfolio-item">
-        <a href="https://github.com/lmoriond/pythonprojects/blob/main/Apple_health/apple_health_data_processor.ipynb">
-        <img src="assets/img/portfolio7.png" alt="Exporting Wearable's Data">
-        <h3>Exporting Wearable's Data</h3> </a>
-        <p>Export apple watch data to transform and visualize it through Matplob to test my hyphothesis and validate my assumptions: I do not exercise enough.</p>
-    </div>
-    <div class="portfolio-item">
-        <a href="assets/pdf/expenses_tracker.pdf">
-        <img src="assets/img/portfolio8.png" alt="Expenses Tracker App">
-        <h3>Expenses Tracker App</h3> </a>
-        <p>Personal solution for accounting and data analysis for all of my purchases and expeses. Developed with Appsheet, free to download and use.</p>
-    </div>
-    <div class="portfolio-item">
-        <a href="assets/pdf/googleanalytics.pdf">
-        <img src="assets/img/portfolio9.png" alt="Google Analytics Insights">
-        <h3>Google Analytics Insights</h3> </a>
-        <p>Experimentation with Google Tag and Google Analytics to collects data from my portfolio to create reports that provide useful insights.</p>
-    </div>
-  </div>
+            <p class="footer__copy">lmoriond &#169; All rights reserved - Last update Feb 2023</p>
+        </div>
+
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="portfolio.html" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scroll__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
 </body>
-</div>
-<p class="footer__copy">lmoriond &#169; All rights reserved - Last update Feb 2023</p>
-</div>
-
-</footer>
-
-<!--==================== SCROLL TOP ====================-->
-<a href="portfolio.html" class="scrollup" id="scroll-up">
-    <i class="uil uil-arrow-up scroll__icon"></i>
-</a>
-
-<!--==================== SWIPER JS ====================-->
-<script src="assets/js/swiper-bundle.min.js"></script>
-
-<!--==================== MAIN JS ====================-->
-<script src="assets/js/main.js"></script>
-
-</body>
-
 </html>
