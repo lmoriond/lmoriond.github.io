@@ -177,3 +177,25 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+// Portfolio filtering / 
+const filterSelect = document.getElementById('portfolio-filter');
+const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+filterSelect.addEventListener('change', function() {
+  const selectedCategory = this.value;
+
+  portfolioItems.forEach(function(item) {
+    if (selectedCategory === 'all' || item.dataset.category === selectedCategory) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+
+  const activeOption = document.querySelector('#portfolio-filter option:checked');
+  document.querySelectorAll('#portfolio-filter option').forEach(function(option) {
+    option.classList.remove('active');
+  });
+  activeOption.classList.add('active');
+});

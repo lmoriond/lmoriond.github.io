@@ -1245,3 +1245,40 @@ img{
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* Style for portfolio filtering */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  label {
+    margin-right: 50px;
+  }
+
+  select {
+    background-color: rgba(255, 255, 255, 0.767);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 16px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease-in-out;
+    appearance: none;
+  }
+
+  select:hover, select:focus {
+    outline: none;
+    box-shadow: 0px 1px 5px rgba(7, 194, 1, 0.5);
+  }
+
+  select option {
+    background-color: white;
+    color: black;
+  }
+
+  select option:checked {
+    background-color: #46fd92;
+    color: white;
+  }
