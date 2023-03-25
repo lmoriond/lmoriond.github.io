@@ -1322,3 +1322,28 @@ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 grid-template-columns: repeat(3, 1fr);
  }
  }
+
+  /* Style for LOADER */
+
+  .loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #03853d;
+    border-top-color: #3f3f3f;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }

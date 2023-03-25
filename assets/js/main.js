@@ -199,3 +199,11 @@ filterSelect.addEventListener('change', function() {
   });
   activeOption.classList.add('active');
 });
+
+
+// Loader page function / 
+
+window.addEventListener('load', function() {
+    var preloader = document.getElementById('preloader');
+    preloader.innerHTML = '<iframe src="loader.html" width="100%" height="100%" frameborder="0"></iframe>';
+  });
