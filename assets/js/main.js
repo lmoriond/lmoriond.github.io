@@ -178,7 +178,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-// Portfolio filtering / 
+//===================================== Portfolio filtering =========================================/ 
 const filterSelect = document.getElementById('portfolio-filter');
 const portfolioItems = document.querySelectorAll('.portfolio-item');
 
@@ -201,7 +201,7 @@ filterSelect.addEventListener('change', function() {
 });
 
 
-// Loader page function / 
+////===================================== Loader page function //=====================================/ 
 
 window.addEventListener('load', function() {
     var preloader = document.getElementById('preloader');

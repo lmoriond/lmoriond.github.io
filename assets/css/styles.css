@@ -1347,3 +1347,97 @@ grid-template-columns: repeat(3, 1fr);
       transform: rotate(360deg);
     }
   }
+
+
+  /* Style for certificate filtering */
+
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    margin: 50px;
+  }
+ 
+  .certificate-item {
+    background-color: rgba(70, 253, 146, 0.116);
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;      
+    transition: all 0.3s ease-in-out;
+  }
+ 
+  .certificate-item img {
+    border-radius: 25px; /* Adjust the value to control the amount of rounding */
+    width: 90%;
+  }
+ 
+  .certificate-item:hover {
+    background-color: rgba(70, 253, 146, 0.329);
+    transform: scale(1.1);
+ 
+  }
+  @media screen and (max-width: 768px) {
+ .certificate-grid {
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  }
+ 
+  @media screen and (min-width: 769px) {
+ .certificate-grid {
+ grid-template-columns: repeat(5, 1fr);
+  }
+  }
+
+  /* Style for LOGOS BANNER */
+
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: rgba(255, 255, 255, 0);
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 70px;
+    margin: 0 40px;
+  }
