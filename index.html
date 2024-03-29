@@ -33,6 +33,20 @@
    
     <!--==================== LOADER ====================-->
 
+    <script>
+      var password = "lmoriond";
+      (function passcodeprotect() {
+         var passcode = prompt("Enter PassCode");
+         while (passcode !== password) {
+            alert("Incorrect PassCode");
+            return passcodeprotect();
+         }
+      }());
+      alert('Welcome to my Portfolio');
+   </script>
+
+
+
     <meta http-equiv="refresh" content="3; url=cv.html" />
   </head>
                                                 <style>
