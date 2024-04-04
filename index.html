@@ -36,7 +36,7 @@
     <script>
       var password = "lmoriond";
       (function passcodeprotect() {
-         var passcode = prompt("Enter PassCode");
+         var passcode = prompt("Enter Password");
          while (passcode !== password) {
             alert("Incorrect PassCode");
             return passcodeprotect();
@@ -83,6 +83,12 @@
   </body>
 </html>
 
+    <!--==================== CURSOR ====================-->
+    <style>
+      html {
+    cursor: url('assets/img/cursor.png'), auto;
+  }
+  </style>
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
 
